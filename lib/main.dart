@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
           floatingActionButton: Builder(
             builder: (ctx) => FloatingActionButton(
               onPressed: () => Navigator.pushNamed(ctx, '/page_screen'),
-              child: Text('pop'),
+              child: Text('push'),
             ),
           ), // This trailing comma makes auto-formatting nicer for build methods.
         ),
@@ -74,7 +74,7 @@ class PageScreen extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, '/page_screen'),
-        child: Text('pop'),
+        child: Text('push'),
       ),
     );
   }
